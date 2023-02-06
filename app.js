@@ -1,10 +1,10 @@
 
 //  Problem 1. Lets play mind game
 
-// Description : This mindGame function is a function where
+// Description : This mindGame() function is a function where
 //         you put a positive number as a parameter then  it calculate
 //         some mathematical operation i.e multiplicatin bt 3 then addition 
-//         by 10 after that divided by 2 and finally substration by 5 and you get final result.
+//         by 10 after that divided by 2 and finally substration by 5 and we get final result.
 // 
 
 function mindGame(positiveNumber){
@@ -27,7 +27,7 @@ function mindGame(positiveNumber){
 
 // Problem-2 : Finding Even or Odd
 
-// Description :evenOdd function is a function which is check if a input parameter is a string
+// Description :evenOdd() function is a function which is check if a input parameter is a string
 //   and check how many charecter it is and if its length is even the its return even and if its 
 //   length is odd then it return odd as a message.
  
@@ -50,7 +50,7 @@ function evenOdd(stringInput){
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // problem -3 :Is less or Grater than 7
-// Description : isLGSeven function calculate the difference between the input number and 7
+// Description : isLGSeven() function calculate the difference between the input number and 7
 //   then the calculated result compair with 7 if it is less than 7 then it show the calculated 
 //   result but if the calculated result is grater than 7 then it show the double of the input 
 //    number.
@@ -74,7 +74,7 @@ function isLGSeven(number){
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // problem -3 :Finding bad data.
-// Description : findingBadData function help us to findout how many negative number exist
+// Description : findingBadData() function help us to findout how many negative number exist
 //  in an arry . it calculate every  negative data and show us the total  result
 // (how many negative value present).
 
