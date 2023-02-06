@@ -37,10 +37,10 @@ function evenOdd(stringInput){
     }
     else {
         if(stringInput.length % 2 == 0){
-            return 'even'
+            return 'even';
         }
         else{
-            return 'odd'
+            return 'odd';
         }
     }
 }
@@ -63,12 +63,12 @@ function isLGSeven(number){
             return number -7;
          }
          else{
-            return 2*number
+            return 2*number;
          }
     }
 }
 
-// let lgSeven=isLGSeven(6)
+// let lgSeven=isLGSeven(6);
 // console.log(lgSeven);
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
