@@ -3,22 +3,20 @@
 
 // Description : This mindGame() function is a function where
 //         you put a positive number as a parameter then  it calculate
-//         some mathematical operation i.e multiplicatin bt 3 then addition 
-//         by 10 after that divided by 2 and finally substration by 5 and we get final result.
-// 
+//         some mathematical operation i.e multiplicatin by 3 then addition 
+//         by 10 after that divided by 2 and finally substration by 5 and we get final result. 
 
 function mindGame(positiveNumber){
-    if(typeof(positiveNumber) == 'string'){
-        return 'you select an invalid one ,please check your number';
-    }
-    else{
+    if(typeof(positiveNumber) == 'number'){
         let firstStep =positiveNumber*3;
         let secondStep=firstStep+10;
         let thirdStep=secondStep/2;
         let finalStep=thirdStep-5;
-        return finalStep;
+        return finalStep;      
     }
-  
+    else{
+        return 'you select an invalid one ,please check your number';
+    }
 }
 // let finalResult =mindGame(33);
 // console.log(finalResult);
@@ -32,19 +30,20 @@ function mindGame(positiveNumber){
 //   length is odd then it return odd as a message.
  
 function evenOdd(stringInput){
-    if(typeof(stringInput) == 'number'){
-        return 'you select an invalid one ,please check your Input';
-    }
-    else {
+    if(typeof(stringInput) == 'string'){
         if(stringInput.length % 2 == 0){
             return 'even';
         }
         else{
             return 'odd';
-        }
+        }     
+    }
+    else {
+       
+        return 'you select an invalid one ,please check your Input';
     }
 }
-// let evenOddFind=evenOdd('chatgpt');
+// let evenOddFind=evenOdd('batch7');
 // console.log(evenOddFind);
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -55,35 +54,31 @@ function evenOdd(stringInput){
 //   result but if the calculated result is grater than 7 then it show the double of the input 
 //    number.
 function isLGSeven(number){
-    if(typeof(number) == 'string'){
-        return 'you select an invalid one ,please check your Input';
-    }
-    else{
+    if(typeof(number) == 'number'){
         if ((number -7) < 7){
             return number -7;
          }
          else{
             return 2*number;
-         }
+         }     
+    }
+    else{      
+         return 'you select an invalid one ,please check your Input';
     }
 }
-
-// let lgSeven=isLGSeven(6);
-// console.log(lgSeven);
-
+// let result=isLGSeven(15);
+// console.log(result);
+//
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // problem -3 :Finding bad data.
-// Description : findingBadData() function help us to findout how many negative number exist
+// Description : findingBadData() function help us to find out how many negative number exist
 //  in an arry . it calculate every  negative data and show us the total  result
 // (how many negative value present).
 
-// let dummyArry=[2,-5,-7,-13];
+// let dummyArry=[-4,-9,-5,-33,-55];
 function findingBadData(numberArry){
-    if(typeof(numberArry) == 'string' || typeof(numberArry) == 'number') {
-        return 'you select an invalid one ,please check your Input';
-    }
-    else{
+    if(Array.isArray(numberArry) == true) {
         let count=0
         for (let i = 0; i < numberArry.length; i++) {
             const element = numberArry[i];
@@ -91,7 +86,10 @@ function findingBadData(numberArry){
                 count++;
             }
         }
-        return count;
+        return count;       
+    }
+    else{
+        return 'you select an invalid one ,please check your Input';
     }   
 }
 // let finalResult=findingBadData(dummyArry);
@@ -106,10 +104,7 @@ function findingBadData(numberArry){
 // calculate  difference of total diamond and 2000 and we get our expected results.
 
 function gemsToDiamond(num1,num2,num3){
-    if(typeof(num1) == 'string' || typeof(num2) == 'string' || typeof(num3) == 'string') {
-        return 'you select an invalid one ,please check your Input';
-    }
-    else{
+    if(typeof(num1) == 'number' && typeof(num2) == 'number' && typeof(num3) == 'number') {
         let firstFriendPower=21;
         let secondFriendPower=32;
         let thirdFriendPower=43;
@@ -119,9 +114,12 @@ function gemsToDiamond(num1,num2,num3){
         }
         else{
             return totalDiamond;
-        }
+        }      
+    }
+    else{
+        return 'you select an invalid one ,please check your Input';
     }
 }
-//  let results= gemsToDiamond(100,5,'biplab');
+//  let results= gemsToDiamond(100,5,1);
 //  console.log(results);
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
